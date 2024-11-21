@@ -1,0 +1,249 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #f0ecf8, #faf1f7);
+    line-height: 1.6;
+    padding-top: 5px; /* Espacio para la barra de navegación fija */
+}
+
+/* Estilo para párrafos */
+p {
+    color: #080208;
+    text-align: justify;
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+i{
+    color:#701574;
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: #fe5d9b;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    color: #6f3d73;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; 
+}
+h6{
+    color:#2e172e;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; 
+}
+h5 {
+        color: #9b08a8;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+      }/* Contenedor general */
+#content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenido */
+    margin-top: 60px;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+/* Estilo de la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en una nueva línea si es necesario */
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Estilo de las columnas */
+.column {
+    flex: 1; /* Las columnas ocupan espacio equitativo */
+    min-width: 280px; /* Tamaño mínimo ajustable para pantallas pequeñas */
+    padding: 20px;
+    background-color: #e9d1dd; /* Fondo pastel */
+    border: 1px solid #f8dce7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Efecto hover para columnas */
+.column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+.container-custom {
+    background-color:#e7c3ff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Navegación */
+nav-wrapper {
+    margin: 10px; /* Márgenes alrededor del menú */
+}
+
+/* Estilo del menú */
+nav {
+    position: fixed;
+    width: calc(100% - 20px); /* Resta el margen aplicado */
+    top: 10px; /* Desplazamiento desde arriba */
+    left: 10px; /* Márgenes a la izquierda */
+    background-color: #c561a6; /* Fondo pastel */
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bordes redondeados para un mejor efecto */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #f8e7ed;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #be83ac;
+    color: #fadbdb;
+    border-radius: 5px;
+}
+#content-section {
+    background-color: #f8efed;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+  }
+.column img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.btn-google-calendar {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.location-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.location-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.image-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.image-strip img {
+    width: 200px;  /* Establece el tamaño fijo en 200px */
+    height: 200px; /* Establece el tamaño fijo en 200px */
+    object-fit: cover; /* Mantiene la proporción de la imagen recortando el exceso */
+}
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    #content {
+        padding: 15px;
+        margin-top: 70px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Acomoda las columnas en una sola fila */
+        align-items: center; /* Centra las columnas */
+    }
+
+    .column {
+        min-width: 100%; /* Las columnas ocupan el 100% del ancho */
+        padding: 15px;
+    }
+
+    #content {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .column {
+        min-width: 100%; /* Las columnas ocupan todo el ancho */
+        padding: 10px;
+    }
+
+    #content {
+        padding: 10px;
+        margin-top: 90px;
+    }
+}

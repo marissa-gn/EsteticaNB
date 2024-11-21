@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Fuentes e iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+     <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+            <li><a href="opciones.html"><i class="fa-solid fa-wand-sparkles"></i> ¿Qué te gustaría realizarte?</a></li>
+            <li><a href="agenda.html"><i class="fa-solid fa-calendar-days"></i> Agenda tu cita</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div id="content">
+        <h1>¡B i e n v e n i d a!</h1>
+        <h2>¡Qué gusto que estés aquí!</h2>
+        <div class="row">
+            <div class="column column-5">
+                <p>En <b>Estética Nabor</b>, queremos ayudarte a encontrar tu nueva imagen, para que te sientas única y diferente, caminando con seguridad.
+                    Con años de experiencia y un equipo altamente capacitado, te garantizamos resultados que superarán tus expectativas.
+                    Tiempo de preparación y certificaciones para atenderte de la mejor manera</p>
+                <p>Visítanos, estamos a tu servicio los 7 días de la semana, desde las 9:00 a.m. hasta las 6:00 p.m.</p>
+                <h2>Agradecemos tu preferencia, la compensamos con calidad.</h2>
+                <div class="contact-section">
+                  <h5>Contactanos en nuestras redes sociales</h5>
+                  <div class="contact-icons">
+                    <a href="mailto:esteticanabor@gmail.com" target="_blank" title="Correo"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/7122634292" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/AliciaNabor" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="column column-7">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://i.pinimg.com/736x/28/c2/b0/28c2b0ea594f7ffec639aeddb220e6e8.jpg" class="d-block w-100" alt="Image 1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/a6/16/89/a616897ffd353037f5debff98116e604.jpg" class="d-block w-100" alt="Image 2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/46/b8/98/46b898b45bd3d6eaecae05c2f380140b.jpg" class="d-block w-100" alt="Image 3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/87/32/e4/8732e48eba52da89facc7374666f148f.jpg" class="d-block w-100" alt="Image 4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i.pinimg.com/736x/f8/27/24/f82724f5a2f15372d9ff877996602355.jpg" class="d-block w-100" alt="Image 5">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <style>
+                    /* Asegura que todas las imágenes tengan la misma altura y no se distorsionen */
+                    .carousel-inner img {
+                      object-fit: cover;
+                      height: 400px; /* Altura fija para las imágenes */
+                    }
+                  </style>
+            </div>
+        </div>
+    </div> <!-- Cierre de #content -->
+</body>
+</html>
